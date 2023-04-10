@@ -1,8 +1,8 @@
 .wrapper{
     width: 100%;
     display:grid;
-    grid-template-rows:auto auto auto auto;
-    grid-template-columns: 2fr;
+    grid-template-rows:auto auto 1fr auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
     "header"
     "nav"
@@ -14,17 +14,52 @@
 
 }
 body{
+   
+    margin: 0;
+    padding: 0;
     
 }
 li a{/* allt text som är definerat som a ändrar egenskapr, alltså länker  */
     text-decoration: none;
     border: none;
     
-}   
+}  
 
-
+header{
+    display: grid;
+    grid-area: header;
+    padding: auto;
+}
+main{
+    display: grid;
+    grid-area: main;
+    height: auto;
+    padding: auto;
+}
+nav{
+    display: grid;
+    grid-area: nav;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+}
+footer{
+    display: grid;
+    grid-area: footer;
+    padding: auto;
+   
+}
 
 nav>ul {/* ändra egenskaper på texten för listan  */
-    
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     list-style-type:none;
+    padding:0;
+    margin:auto;
+}
+
+nav>ul>li {
+    padding: 20px;
+    margin: 10px;
 }
