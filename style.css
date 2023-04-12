@@ -15,8 +15,8 @@
 }
 body{
    
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     
 }
 li a{/* allt text som är definerat som a ändrar egenskapr, alltså länker  */
@@ -29,24 +29,39 @@ header{
     display: grid;
     grid-area: header;
     padding: auto;
+    background-color: #2b303A;
+    
 }
 main{
     display: grid;
     grid-area: main;
     height: auto;
     padding: auto;
+    height:80vh;
 }
 nav{
     display: grid;
     grid-area: nav;
     height: auto;
-    padding: 10px;
+    padding: auto;
     align-items: center;
+    
+}
+li a{
+    background-color: #7C7C7C;
+    color:  #F2FDFF;
+}
+li a:hover{
+    background-color: #2b303A;
+    
 }
 footer{
     display: grid;
     grid-area: footer;
     padding: auto;
+    background-color: #2b303A;
+    color: #F2FDFF;
+    
    
 }
 
@@ -55,11 +70,22 @@ nav>ul {/* ändra egenskaper på texten för listan  */
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     list-style-type:none;
-    padding:0;
-    margin:auto;
+    padding:auto;
+    
+    
+    
 }
 
-nav>ul>li {
-    padding: 20px;
-    margin: 10px;
+nav,main{
+    background-color: #7C7C7C;
 }
+
+a{
+    color: #F2FDFF;
+    text-decoration: none;
+}
+
+p{
+    color: #F2FDFF;
+}
+
