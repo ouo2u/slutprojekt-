@@ -44,17 +44,26 @@ nav{
     grid-area: nav;
     height: auto;
     padding: auto;
-    align-items: center;
+    align-items: left;
     
 }
 li a{
     background-color: #7C7C7C;
     color:  #F2FDFF;
+    font-size: 1.5em;
+   
 }
-li a:hover{
-    background-color: #2b303A;
+li a:hover + svg{
+
+ fill: red;
+}
+
+ h1{
+    display: none;
+ }
+   
     
-}
+
 footer{
     display: grid;
     grid-area: footer;
@@ -81,6 +90,8 @@ nav,main{
 }
 
 a{
+    display: block;
+    inline-size: auto;
     color: #F2FDFF;
     text-decoration: none;
 }
@@ -90,6 +101,7 @@ p{
 }
 
 nav img {
-    width:20px;
+    width:10%;
+    height: auto;
     
 }
