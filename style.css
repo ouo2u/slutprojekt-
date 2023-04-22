@@ -19,19 +19,30 @@ body{
     padding: auto;
     
 }
-li a{/* allt text som är definerat som a ändrar egenskapr, alltså länker  */
-    text-decoration: none;
-    border: none;
-    
-}  
 
+ 
 header{
     display: grid;
     grid-area: header;
     padding: auto;
     background-color: #2b303A;
+    height:auto;
     
 }
+header h1{
+    font-size: 25px;
+}
+header a{
+    display: flex;
+    align-items: center;
+    inline-size: fit-content;
+}
+header img{
+    width: 50px;
+    height: auto;
+}
+
+
 main{
     display: grid;
     grid-area: main;
@@ -47,20 +58,25 @@ nav{
     align-items: left;
     
 }
-li a{
+li a{/* allt text som är definerat som a ändrar egenskapr, alltså länker  */
     background-color: #7C7C7C;
     color:  #F2FDFF;
     font-size: 1.5em;
+    text-decoration: none;
+    border: none;
+    inline-size: fit-content;
    
 }
+
 li a:hover + svg{
 
  fill: red;
 }
 
- h1{
-    display: none;
- }
+img{
+    height: 50%;
+    width: 50%;
+}
    
     
 
@@ -94,6 +110,7 @@ a{
     inline-size: auto;
     color: #F2FDFF;
     text-decoration: none;
+    
 }
 
 p{
@@ -105,3 +122,10 @@ nav img {
     height: auto;
     
 }
+
+svg{
+    width: 50%;
+    height: 50%;
+     
+}
+
