@@ -41,7 +41,10 @@ header img{
     width: 50px;
     height: auto;
 }
-
+main img{
+    width: 100px;
+    height: auto;
+}
 
 main{
     display: grid;
@@ -73,11 +76,6 @@ li a:hover + svg{
  fill: red;
 }
 
-img{
-    height: 50%;
-    width: 50%;
-}
-   
     
 
 footer{
@@ -127,5 +125,25 @@ svg{
     width: 50%;
     height: 50%;
      
+}
+
+h2{
+    color: white;
+    text-align: center;
+    background-color: #2b303A;
+    height: min-content;
+}
+
+table{
+    border: solid black;
+    background-color: #F5AC72;
+    color: #F2FDFF;
+    margin: 0;
+    border-collapse: collapse;
+    
+}
+td{
+    text-align: center;
+    vertical-align: middle;
 }
 
