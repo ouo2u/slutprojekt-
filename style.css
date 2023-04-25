@@ -140,10 +140,31 @@ table{
     color: #F2FDFF;
     margin: 0;
     border-collapse: collapse;
-    
+    width: 50%;
+    align-items: center;
 }
 td{
     text-align: center;
     vertical-align: middle;
+    align-items: center;
+    
+  align-content: center;
 }
 
+tr{
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.image-wrapper{
+    width: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.image-in-table{
+    width: 10%;
+    height: auto;
+}
