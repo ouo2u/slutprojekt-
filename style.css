@@ -133,38 +133,33 @@ h2{
     background-color: #2b303A;
     height: min-content;
 }
-
-table{
-    border: solid black;
-    background-color: #F5AC72;
-    color: #F2FDFF;
-    margin: 0;
-    border-collapse: collapse;
-    width: 50%;
-    align-items: center;
-}
-td{
-    text-align: center;
-    vertical-align: middle;
-    align-items: center;
+#byggadator{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
     
-  align-content: center;
+    
+}
+#byggadator, .text-in-middle{
+    border:solid;
+    
 }
 
-tr{
+.text-in-middle{
     text-align: center;
-    vertical-align: middle;
-    align-items: center;
+    
 }
 
 .image-wrapper{
     width: fit-content;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
+    margin: auto;
 
 }
-.image-in-table{
-    width: 10%;
+.image-for-computer{
+    width: 93%;
     height: auto;
+   
 }
+
+
+
+
