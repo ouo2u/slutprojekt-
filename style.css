@@ -143,6 +143,12 @@ h2{
     background-color: #F5AC72;
     
 }
+#byggaguides{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    height: auto;
+    background-color:#FF9B71;
+}
 #byggadator, .text-in-middle{
     border:solid;
     
