@@ -92,8 +92,7 @@ nav>ul {
     padding: 0;
 }
 
-nav,
-main {
+nav,main {
     background-color: #7c7c7c;
 }
 
@@ -169,7 +168,12 @@ table {
     color: #f2fdff;
 }
 
-th,
-td {
+th,td {
     border: 1px solid black;
+}
+
+video{
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
 }
