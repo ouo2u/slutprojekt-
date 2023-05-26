@@ -1,40 +1,35 @@
-<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folmular</title>
+    <title>Formulär</title>
 </head>
 <body>
-   
-    </form>
-    <from action="sida2.html" method="post">
+    <header>
+        <a href="../index.html"> <h1>dator.nu<img src="../computercraft-removebg-preview.png " alt="startsidabild" ></h1></a>
+     </header><!-- min första rubrik-->
+<main>
+    <form action="sida2.html" method="post">
         <p>
             <label for="un">Användarnamn:</label>
-            <input name="username" id="un" required>
+            <input type="username" name="username" id="un" required>
         </p>
         <p>
             <label for="pw">Lösenord:</label>
-            <input name="password" type="password" id="pw" required>
+            <input type="password" name="password" id="pw" required>
         </p>
         <p>
-            <input type="submit" value="Logga in">
-        </p>
-        <p><p>Kön</p>
+            <label for="kön">Kön:</label><br>
             <input type="radio" id="kön1" name="kön" value="Man">
             <label for="kön1">Man</label><br>
             <input type="radio" id="kön2" name="kön" value="Kvinna">
             <label for="kön2">Kvinna</label><br>
             <input type="radio" id="kön3" name="kön" value="lidl påse">
-            <label for="kön3">lidl påse</label><br>
-            <input type="submit" value="Submit">
+            <label for="kön3">Lidl påse</label><br>
         </p>
-    </from>
-    <br>
-    <p>Välj dator delar:</p>
-    <form action="sida2.html">
-        <label for="cpu">Välj CPU</label>
+        <p>Välj dator delar:</p>
+        <label for="cpu">Välj CPU:</label>
         <select name="cpu" id="cpu">
             <option value="I3">I3</option>
             <option value="I5">I5</option>
@@ -45,90 +40,58 @@
             <option value="Ryzen 7">Ryzen 7</option>
             <option value="Ryzen 9">Ryzen 9</option>
         </select><br>
-        <input type="submit" value="Submit"> 
-    </form>
-    <br>
-    <form action="sida2.html">
-        <label for="grafikkort">Välj grafikkort</label>
+        <label for="grafikkort">Välj grafikkort:</label>
         <select name="grafikkort" id="grafikkort">
             <option value="GTX">GTX</option>
             <option value="RTX">RTX</option>
             <option value="AMD">AMD</option>
             <option value="A">A</option>
-            <option value="En innre grafikkort">En cpu grafikkort</option>
+            <option value="En intern grafikkort">En integrerad grafikkort</option>
         </select><br>
-        <input type="submit" value="Submit"> 
-    </form>
-    <br>
-    <form action="sida2.html">
-        <label for="Motherboard">moderkort</label>
+        <label for="moderkort">Moderkort:</label>
         <select name="moderkort" id="moderkort">
             <option value="småmoderkort">Små</option>
-            <option value="midmoderkort">mid</option>
+            <option value="midmoderkort">Mid</option>
             <option value="stormoderkort">Stor</option>
         </select><br>
-        <input type="submit" value="Submit"> 
-    </form>
-    <br>
-    <form action="sida2.html">
-        <label for="chassi">chassi</label>
+        <label for="chassi">Chassi:</label>
         <select name="chassi" id="chassi">
             <option value="småchassi">Små</option>
-            <option value="midchassi">mid</option>
+            <option value="midchassi">Mid</option>
             <option value="storchassi">Stor</option>
         </select><br>
-        <input type="submit" value="Submit"> 
-    </form>
-    <br>
-    <form action="sida2.html">
-        <label for="RAM">RAM</label>
+        <label for="RAM">RAM:</label>
         <select name="RAM" id="RAM">
-            <option value="4G">4G</option>
-            <option value="8G">8G</option>
-            <option value="16G">16G</option>
-            <option value="32G">32G</option>
-            <option value="64G">64G</option>
+            <option value="4G">4GB</option>
+            <option value="8G">8GB</option>
+            <option value="16G">16GB</option>
+            <option value="32G">32GB</option>
+            <option value="64G">64GB</option>
         </select><br>
-        <input type="submit" value="Submit"> 
-    </form>
-    <br>
-    <form action="sida2.html">
-        <label for="PSU">PSU</label>
+        <label for="PSU">PSU:</label>
         <select name="PSU" id="PSU">
-            <option value="500w">500watt</option>
-            <option value="550w">550watt</option>
-            <option value="600w">600watt</option>
-            <option value="650w">650watt</option>
-            <option value="700w">700watt</option>
-            <option value="750w">750watt</option>
-            <option value="500w">800watt</option>
-            <option value="600w">850watt</option>
-            <option value="500w">900watt</option>
-            <option value="600w">950watt</option>
-            <option value="1000w">1000watt</option> 
+            <option value="500w">500 watt</option>
+            <option value="550w">550 watt</option>
+            <option value="600w">600 watt</option>
+            <option value="650w">650 watt</option>
+            <option value="700w">700 watt</option>
+            <option value="750w">750 watt</option>
+            <option value="800w">800 watt</option>
+            <option value="850w">850 watt</option>
+            <option value="900w">900 watt</option>
+            <option value="950w">950 watt</option>
+            <option value="1000w">1000 watt</option> 
         </select><br>
-        <input type="submit" value="Submit"> 
+        <p>Vad tycker du om hemsidan?</p>
+        <input type="checkbox" id="tyckerOm" name="tyckerOm" value="hemsidan">
+        <label for="tyckerOm">Jag tycker om hemsidan</label><br>
+        <input type="checkbox" id="hatar" name="hatar" value="hemsidan nah">
+        <label for="hatar">Jag hatar hemsidan</label><br>
+        <input type="submit" value="Klar">
     </form>
-    <br>
-    <p>vad tycker du om hemsidan?</p>
-    <form action="sida2.html" metod="post">
-        <p>
-            <input type="checkbox" id="tycker" name="tycker" value="hemsidan">
-            <label for="hemsidan">Jag tycker om hemsidan</label><br>
-            <input type="checkbox" id="hatar" name="hatar" value="hemsidan nah">
-            <label for="hatar">Jag hatar hemsidan</label><br>
-            <input type="submit" value="Submit">
-        </p>
-    </form>
-    <form action="form.html" method="get">
-        <p>feedback</p>
-        <p>
-          <textarea id="fb" name="feedback" rows="6" cols="80"></textarea><br>
-          <input type="submit" value="Klar" required>
-        </p>
-      </form>
     <br>
     <br>
     <a href="sida3.html">Klar</a>
+</main>
 </body>
 </html>

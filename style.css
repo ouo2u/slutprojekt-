@@ -1,170 +1,157 @@
-.wrapper{
+.wrapper {
     width: 100%;
-    display:grid;
-    grid-template-rows:auto auto 1fr auto;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-    background-color:white;
-    /* alla kod som sätter I main kommer att ändra sitt egenskaper beror på vad man skriver*/
-
-
+    grid-template-areas: "header" "nav" "main" "footer";
+    background-color: white;
 }
-body{
-   
-    margin: 0;
+
+body {
+    margin: auto;
     padding: 0;
-    
 }
 
- 
 header {
-    display: flex; /* Använd flex istället för grid */
+    display: flex;
     align-items: center;
-    justify-content: left; /* Centrera innehållet */
+    justify-content: left;
     background-color: #2b303a;
     height: auto;
-    padding: 10px; /* Lägg till en passande padding */
+    padding: 10px;
 }
 
 header h1 {
     font-size: 25px;
-    margin: 0; /* Ta bort standardmarginalen */
-    color: white; /* Lägg till färg */
+    margin: 0;
+    color: white;
 }
 
-header a{
+header a {
     display: flex;
     align-items: center;
-    inline-size: fit-content;
+    width: fit-content;
 }
-header img{
+
+header img {
     width: 50px;
     height: auto;
 }
-main img{
+
+main img {
     width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-main{
+main {
     display: grid;
     grid-area: main;
     height: auto;
-    padding: auto;
-    height:80vh;
+    padding: 0;
+    height: 80vh;
 }
-nav{
+
+nav {
     display: grid;
     grid-area: nav;
     height: auto;
-    padding: auto;
+    padding: 0;
     align-items: left;
-    
 }
-ol{
-    color: #F2FDFF;
+
+ol {
+    color: #f2fdff;
 }
-li a{/* allt text som är definerat som a ändrar egenskapr, alltså länker  */
-    background-color: #7C7C7C;
-    color:  #F2FDFF;
+
+li a {
+    background-color: #7c7c7c;
+    color: #f2fdff;
     font-size: 1.5em;
     text-decoration: none;
     border: none;
-    inline-size: fit-content;
-   
+    width: fit-content;
 }
 
-li a:hover + svg{
-
- fill: red;
+li a:hover + svg {
+    fill: red;
 }
-
-    
 
 footer {
     background-color: #2b303a;
     color: #f2fdff;
-    padding: 10px; /* Lägg till en passande padding */
+    padding: 10px;
 }
 
-nav>ul {/* ändra egenskaper på texten för listan  */
-    display:grid;
+nav>ul {
+    display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    list-style-type:none;
-    padding:auto;
-    
-    
-    
+    list-style-type: none;
+    padding: 0;
 }
 
-nav,main{
-    background-color: #7C7C7C;
+nav,
+main {
+    background-color: #7c7c7c;
 }
 
-a{
+a {
     display: block;
-    inline-size: auto;
-    color: #F2FDFF;
+    width: auto;
+    color: #f2fdff;
     text-decoration: none;
-    
 }
 
-p{
-    color: #F2FDFF;
+p {
+    color: #f2fdff;
 }
 
 nav img {
-    width:10%;
+    width: 10%;
     height: auto;
-    
 }
 
-svg{
-    width: 50%;
-    height: 50%;
-     
+svg {
+    width: 50px;
+    height: 50px;
 }
 
-h2{
+h2 {
     color: white;
     text-align: center;
-    background-color: #2b303A;
+    background-color: #2b303a;
     height: min-content;
 }
-#byggadator{
+
+#byggadator {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     height: auto;
-    background-color: #F5AC72;
-    
-}
-#byggaguides{ /* vill inte att den ska ha samma färg som byggadator. */
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    height: auto;
-    background-color:#FF9B71;
-}
-#byggadator, .text-in-middle{
-    border:solid;
-    
+    background-color: #f5ac72;
 }
 
-.text-in-middle{
+#byggaguides {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    background-color: #ff9b71;
+}
+
+#byggadator,
+.text-in-middle {
+    border: solid;
+}
+
+.text-in-middle {
     text-align: center;
-    
 }
 
 .image-wrapper {
-    display: flex; /* Använd flex istället för grid */
-    justify-content: center; /* Centrera innehållet horisontellt */
-    align-items: center; /* Centrera innehållet vertikalt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
     margin: auto;
 }
@@ -172,20 +159,17 @@ h2{
 .image-for-computer {
     width: 93%;
     height: auto;
-    border: solid; /* Lägg till en ram */
-    border-width: 1px; /* Ange ramens tjocklek */
+    border: solid;
+    border-width: 1px;
 }
 
-table{
-    border:2px solid black;
+table {
+    border: 2px solid black;
     border-collapse: collapse;
-    color: #F2FDFF;
+    color: #f2fdff;
 }
-th, td{
-    
+
+th,
+td {
     border: 1px solid black;
 }
-
-
-
-
