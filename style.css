@@ -15,23 +15,27 @@
 }
 body{
    
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     
 }
 
  
-header{
-    display: grid;
-    grid-area: header;
-    padding: auto;
-    background-color: #2b303A;
-    height:auto;
-    
+header {
+    display: flex; /* Använd flex istället för grid */
+    align-items: center;
+    justify-content: left; /* Centrera innehållet */
+    background-color: #2b303a;
+    height: auto;
+    padding: 10px; /* Lägg till en passande padding */
 }
-header h1{
+
+header h1 {
     font-size: 25px;
+    margin: 0; /* Ta bort standardmarginalen */
+    color: white; /* Lägg till färg */
 }
+
 header a{
     display: flex;
     align-items: center;
@@ -44,6 +48,8 @@ header img{
 main img{
     width: 100px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 main{
@@ -81,14 +87,10 @@ li a:hover + svg{
 
     
 
-footer{
-    display: grid;
-    grid-area: footer;
-    padding: auto;
-    background-color: #2b303A;
-    color: #F2FDFF;
-    
-   
+footer {
+    background-color: #2b303a;
+    color: #f2fdff;
+    padding: 10px; /* Lägg till en passande padding */
 }
 
 nav>ul {/* ändra egenskaper på texten för listan  */
@@ -159,15 +161,19 @@ h2{
     
 }
 
-.image-wrapper{
+.image-wrapper {
+    display: flex; /* Använd flex istället för grid */
+    justify-content: center; /* Centrera innehållet horisontellt */
+    align-items: center; /* Centrera innehållet vertikalt */
     width: fit-content;
     margin: auto;
-
 }
-.image-for-computer{
+
+.image-for-computer {
     width: 93%;
     height: auto;
-   
+    border: solid; /* Lägg till en ram */
+    border-width: 1px; /* Ange ramens tjocklek */
 }
 
 table{
