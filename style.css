@@ -1,9 +1,9 @@
 .wrapper {
     width: 100%;
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-rows: auto auto 1fr auto; /* Grid-områden för rader */
+    grid-template-columns: 1fr; /* Grid-områden för kolumner */
+    grid-template-areas: "header" "nav" "main" "footer"; /* Grid-områden för olika delar */
     background-color: white;
 }
 
@@ -12,6 +12,7 @@ body {
     padding: 0;
 }
 
+/* Huvudrubrik */
 header {
     display: flex;
     align-items: center;
@@ -27,6 +28,7 @@ header h1 {
     color: white;
 }
 
+/* Länkar i huvudrubrik */
 header a {
     display: flex;
     align-items: center;
@@ -58,13 +60,14 @@ nav {
     grid-area: nav;
     height: auto;
     padding: 0;
-    align-items: left;
+    align-items: flex-start;
 }
 
 ol {
     color: #f2fdff;
 }
 
+/* Länkar i navigeringsmenyn */
 li a {
     background-color: #7c7c7c;
     color: #f2fdff;
@@ -84,7 +87,8 @@ footer {
     padding: 10px;
 }
 
-nav>ul {
+/* Navigeringsmeny */
+nav > ul {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -92,7 +96,7 @@ nav>ul {
     padding: 0;
 }
 
-nav,main {
+nav, main {
     background-color: #7c7c7c;
 }
 
@@ -124,7 +128,7 @@ h2 {
     height: min-content;
 }
 
-#byggadator {
+#byggadator {/* för att ändra hur sidan bygga,dator ska se ut.   */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: auto;
@@ -143,11 +147,11 @@ h2 {
     border: solid;
 }
 
-.text-in-middle {
+.text-in-middle {/* För att ligga alla klasser som har namnet text-in-middle I mitten. Jag vill inte att hela texten ska ändras till mitten */
     text-align: center;
 }
 
-.image-wrapper {
+.image-wrapper {/* Ge funktioner till bilder som har klasen image-wrapper.  */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +159,7 @@ h2 {
     margin: auto;
 }
 
-.image-for-computer {
+.image-for-computer {/* Klassen för bilder jag har så att de blír lika stoa som länken.  */
     width: 93%;
     height: auto;
     border: solid;
@@ -168,11 +172,11 @@ table {
     color: #f2fdff;
 }
 
-th,td {
+th, td {
     border: 1px solid black;
 }
 
-video{
+video {
     border-radius: 30px;
     width: 300px;
     height: 300px;
