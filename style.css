@@ -7,7 +7,7 @@
     background-color: white;
 }
 
-body {
+body {/* detta är body */
     margin: auto;
     padding: 0;
 }
@@ -35,19 +35,19 @@ header a {
     width: fit-content;
 }
 
-header img {
+header img {/* huvudrubrik bild funktioner */
     width: 50px;
     height: auto;
 }
 
-main img {
+main img {/* main bild funktioner */
     width: 100px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-main {
+main {/* detta är main */
     display: grid;
     grid-area: main;
     height: auto;
@@ -55,7 +55,7 @@ main {
     height: 80vh;
 }
 
-nav {
+nav {/* Detta är naven */
     display: grid;
     grid-area: nav;
     height: auto;
@@ -77,7 +77,7 @@ li a {
     width: fit-content;
 }
 
-li a:hover + svg {
+li a:hover + svg {/* det är när man hovera svg. */
     fill: red;
 }
 
@@ -96,32 +96,32 @@ nav > ul {
     padding: 0;
 }
 
-nav, main {
+nav, main {/* detta gäller för nav och main */
     background-color: #7c7c7c;
 }
 
-a {
+a {/* alla a element */
     display: block;
     width: auto;
     color: #f2fdff;
     text-decoration: none;
 }
 
-p {
+p {/* alla p element */
     color: #f2fdff;
 }
 
-nav img {
+nav img {/* detta är funktioner för nav img */
     width: 10%;
     height: auto;
 }
 
-svg {
+svg {/* bild typ svg funktioner */
     width: 50px;
     height: 50px;
 }
 
-h2 {
+h2 {/* detta är funktioner för min h2 */
     color: white;
     text-align: center;
     background-color: #2b303a;
@@ -135,7 +135,7 @@ h2 {
     background-color: #f5ac72;
 }
 
-#byggaguides {
+#byggaguides {/* samma som bygga dator, ändra färg.  */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: auto;
@@ -143,7 +143,7 @@ h2 {
 }
 
 #byggadator,
-.text-in-middle {
+.text-in-middle {/* Detta ska gälla för båda byggadator och text in middle */
     border: solid;
 }
 
@@ -166,39 +166,42 @@ h2 {
     border-width: 1px;
 }
 
-table {
+table {/* min table */
     border: 2px solid black;
     border-collapse: collapse;
     color: #f2fdff;
 }
 
-th, td {
+th, td {/* th och td funktioner */
     border: 1px solid black;
 }
 
-video {
+video {/* video funktioner  */
     border-radius: 30px;
     width: 300px;
     height: 300px;
 }
 
-a:link{
+a:link{/* Love Foucse Hate */
     color: blue;
     }
     
-a:vistied
+a:vistied/* Love Foucse Hate */
 {
     color: blue;
     }
-a:focus
-{
-    color: orange;
-    }
-a:hover
+a:focus/* Love Foucse Hate */
 {
     color: red;
     }
-a:active
+a:hover/* Love Foucse Hate */
 {
-    background-color:yellow
+    color: orangered;
     }
+a:active/* Love Foucse Hate */
+{
+    background-color:red
+    }
+.text-color-change{/* Love Foucse Hate */
+    color: #ff0000;
+}
