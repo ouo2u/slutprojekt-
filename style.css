@@ -181,3 +181,24 @@ video {
     width: 300px;
     height: 300px;
 }
+
+a:link{
+    color: blue;
+    }
+    
+a:vistied
+{
+    color: blue;
+    }
+a:focus
+{
+    color: orange;
+    }
+a:hover
+{
+    color: red;
+    }
+a:active
+{
+    background-color:yellow
+    }
